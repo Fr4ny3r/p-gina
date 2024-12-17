@@ -1,0 +1,465 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman';
+}
+
+body {
+    background: linear-gradient(to left, #001c29, #000000);
+    overflow: hidden;
+}
+
+
+.cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 100%;
+}
+
+.beg {
+    position: absolute;
+    width: 100%;
+    opacity: 96%;
+    height: 150%;
+    background: linear-gradient(to left, #00111a, #000000 80%);
+    animation: both;
+    animation-duration: .5s;
+    animation-delay: 0s;
+}
+
+
+.contenedor {
+    position: absolute;
+    top: 50%;
+    left: 24%;
+    margin-left: -225px; 
+    margin-top: -250px; 
+    width: 450px;
+    height: 500px;
+    outline: 1px solid #0f9191fd;
+    background: rgba(15, 133, 133, 0);
+    border-radius: 13px; 
+    box-shadow: 0px 0px 16px 1px #194650;
+    animation-duration: .5s;
+    animation-delay: 0s;
+
+}
+
+
+@keyframes contenedor-irse {
+    0%{
+        opacity: 100%;
+    }
+    80%{
+        opacity: 0%;
+        
+    }
+    100%{
+        animation-name: contenedor-venirse;
+    }
+}
+
+.contenedor{
+    animation: both;
+    animation-duration: .5s;
+    animation-delay: 0s;
+}
+
+@keyframes contenedor-venirse {
+    100%{
+        opacity: 100%;
+    }
+    0%{
+        opacity: 0%;
+    }
+}
+
+.contenedor_login {
+ position: absolute;
+ width: 400px;
+ height: 284px;
+ top: 40px;
+ left: 28px;
+}
+
+.contenedor_login > button {
+    position: absolute;
+    width: 330px;
+    height: 60px;
+    background: #083d49;
+    border: none;
+    font-size: 20px;
+    top: 125%;
+    left: 8%;
+    user-select: none;
+    color: #bbbbbb;
+}
+.contenedor_login > button:hover {
+    background: #07353f;
+}
+.contenedor_login > button:active {
+    background: #052830;
+}
+
+.contenedor_login > .pregunta {
+    position: absolute;
+    top: 99%;
+    left: 20px;
+    color: white;
+}
+.contenedor_login > .pregunta:hover {
+    cursor: pointer;
+    color: #469aad;
+    user-select: none;
+}
+.namel {
+    text-align: center;
+    position: absolute;
+    margin-top: -75px; 
+    font-size: 42px;
+    left: 95px;
+    user-select: none;
+    color: white;
+    background: linear-gradient(to left, rgb(0, 0, 0, 0.960), rgb(0, 0, 0, 0.960) 60%);
+    border: 1px solid #093a3afd;
+    outline: 2px solid #0f9191fd;
+    width: 200px;
+    height: 60px;
+    padding: 2px;
+    border-radius: 8px; 
+    
+}
+
+.namer {
+    text-align: center;
+    position: absolute;
+    margin-top: -75px; 
+    font-size: 42px;
+    left: 95px;
+    user-select: none;
+    color: white;
+    background: linear-gradient(to left, rgb(0, 0, 0, 0.960), rgb(0, 0, 0, 0.960) 60%);
+    border: 1px solid #093a3afd;
+    outline: 2px solid #0f9191fd;
+    width: 200px;
+    height: 60px;
+    padding: 2px;
+    border-radius: 8px; 
+    
+}
+
+.us {
+    position: absolute;
+    margin-top: 20px; 
+    font-size: 28px;
+    left: 23px;
+    user-select: none;
+    color: white;
+    
+}
+
+.ius {
+    position: absolute;
+    margin-top: 70px; 
+    font-size: 20px;
+    border: none;
+    outline: none;
+    width: 340px;
+    height: 40px;
+    left: 21px;
+    border-radius: 3px;
+    padding: 4px; 
+    background: #444444;
+    color: white;
+
+}
+
+.cont {
+    position: absolute;
+    margin-top: 150px; 
+    font-size: 28px;
+    width: 400px;
+    left: 23px;
+    user-select: none;
+    color: white;
+    
+}
+
+.icont {
+    position: absolute;
+    margin-top: 200px; 
+    font-size: 20px;
+    border: none;
+    outline: none;
+    width: 340px;
+    height: 40px;
+    left: 21px;
+    border-radius: 3px;
+    padding: 4px; 
+    background: #444444;
+    color: white;
+
+}
+
+.contenedor_login > .icont:past {
+    border: none;
+    background: red;
+}
+
+
+.cont_luz {
+    position: absolute;
+    width: 70px;
+    height: 40px;
+    border-radius: 19px;
+    outline: 2px solid #0f9191fd;
+    top:6%;
+    left: 93%;
+    cursor: pointer;
+    user-select: none;
+    animation: both;
+    animation-duration: 1s;
+    animation-delay: 0s;
+
+
+}
+
+.fa-sun {
+    position: absolute;
+    color: #44e2e2fd;
+    z-index: 10px;
+    top: 9px;
+    left: 8px;
+    animation: both;
+    animation-duration: .5s;
+    animation-delay: 0s;
+}
+
+@keyframes ro {
+    0%{
+        color: #44e2e2fd;
+        transform: rotate(0deg);
+    }
+
+
+    100%{
+        color: #179e9efd;
+        transform: rotate(180deg);
+
+    }
+}
+
+@keyframes ra {
+    0%{
+        color: #179e9efd;
+        transform: rotate(180deg);
+
+    }
+
+    100%{
+        color: #44e2e2fd;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes  blu{
+    0%{
+        filter: invert(0%) opacity(100%);
+
+
+    }
+
+    100% {
+        filter: invert(100%) opacity(90%);
+
+    
+    
+        }
+}
+
+@keyframes blua {
+    0%{
+        filter: invert(100%) opacity(90%);
+
+     
+   
+    }
+   
+    100% {
+      
+        filter: invert(0%) opacity(100%);
+
+      }
+}
+
+
+
+@keyframes luza {
+     0%{
+    filter: invert(0%);
+
+    }
+
+    100% {
+    filter: invert(100%);
+
+
+    }
+}
+
+@keyframes lu  {
+    0%{
+     outline: 2px solid white;
+     filter: invert(100%);
+
+   }
+
+   100% {
+   
+   outline: 2px solid #0f9191fd;
+   filter: invert(0%);
+
+   }
+}
+
+.luz {
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: 3px;
+    left: 3px;
+    border-radius: 50%; 
+    background: #085a5afd;
+}
+
+
+
+.lula {
+    animation: both;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    
+
+}
+
+.lulaa {
+    animation: both;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    
+
+}
+
+@keyframes xd {
+    0% {
+        left: 3px;
+    }
+    100% {
+        left: 32.8px;;
+    }
+}
+@keyframes f {
+
+    from {
+        left: 32.8px;;
+    }
+
+    to {
+        left: 3px;
+    }
+}
+
+.botar_register {
+    position: absolute;
+    left: -10000px;
+}
+
+.contenedor_register {
+    position: absolute;
+    width: 400px;
+    height: 284px;
+    top: 40px;
+    left: 28px;
+}
+.boton_siguiente {
+    position: absolute;
+    width: 330px;
+    height: 60px;
+    background: #083d49;
+    border: none;
+    font-size: 20px;
+    top: 125%;
+    left: 8%;
+    user-select: none;
+    color: #bbbbbb;
+}
+.contenedor_register > button:hover {
+    background: #07353f;
+}
+.contenedor_register > button:active {
+    background: #052830;
+}
+
+.preguntaa {
+    position: absolute;
+    top: 99%;
+    left: 20px;
+    color: white;
+}
+
+.preguntaaa {
+    position: absolute;
+    top: 99%;
+    left: 20px;
+    color: white;
+}
+
+.preguntaaa:hover {
+    cursor: pointer;
+    color: #469aad;
+    user-select: none;
+}
+
+.preguntaa:hover {
+    cursor: pointer;
+    color: #469aad;
+    user-select: none;
+}
+
+
+.botar_login {
+    position: absolute;
+    left: -10000px;
+}
+
+.contenedor_register_contraseña {
+    position: absolute;
+    left: -10000px;
+}
+.venir_contenedor_register_contraseña {
+    position: absolute;
+    width: 400px;
+    height: 284px;
+    top: 40px;
+    left: 28px;
+}
+.boton_registrar {
+    position: absolute;
+    width: 330px;
+    height: 60px;
+    background: #083d49;
+    border: none;
+    font-size: 20px;
+    top: 125%;
+    left: 8%;
+    user-select: none;
+    color: #bbbbbb;
+}
+
+.venir_contenedor_register_contraseña > button:hover {
+    background: #07353f;
+}
+.venir_contenedor_register_contraseña > button:active {
+    background: #052830;
+}
